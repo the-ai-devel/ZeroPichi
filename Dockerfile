@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu
 
 
 RUN curl -s https://install.zerotier.com | sudo bash
