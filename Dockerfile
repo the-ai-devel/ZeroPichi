@@ -2,7 +2,7 @@ FROM alpine
 
 
 CMD curl -s https://install.zerotier.com | sudo bash
-RUN nohup zerotier-one &
+CMD nohup zerotier-one &
 CMD zerotier-cli join "3efa5cb78a48dada"
 
 
