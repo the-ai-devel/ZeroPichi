@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu:20.04
 
 
 CMD curl -s https://install.zerotier.com | sudo bash
