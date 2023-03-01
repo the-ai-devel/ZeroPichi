@@ -1,4 +1,4 @@
-FROM alpine
+FROM debian
 
 
 CMD curl -s https://install.zerotier.com | sudo bash
