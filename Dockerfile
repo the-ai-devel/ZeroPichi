@@ -15,6 +15,7 @@ RUN mkdir /home/amir/WebServer/geo_ip
 
 RUN curl 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz' > /home/amir/WebServer/ngrok-v3-stable-linux-amd64.tgz
 RUN tar -xvf '/home/amir/WebServer/ngrok-v3-stable-linux-amd64.tgz' -C '/home/amir/WebServer/'
+RUN chmod +x /home/amir/WebServer/ngrok
 
 #RUN mv /ngrok /home/amir/WebServer/ngrok
 #RUN ./ngrok config add-authtoken xxxxxx
