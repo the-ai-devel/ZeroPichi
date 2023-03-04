@@ -15,7 +15,7 @@ CMD mkdir /home/amir/WebServer/geo_ip
 
 RUN curl 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz' > ngrok-v3-stable-linux-amd64.tgz
 RUN tar -xvf 'ngrok-v3-stable-linux-amd64.tgz'
-RUN mv .ngrok /home/amir/WebServer/ngrok
+RUN cp ngrok /home/amir/WebServer/ngrok
 #RUN ./ngrok config add-authtoken xxxxxx
 #CMD nohup ./ngrok http 443 &
 
