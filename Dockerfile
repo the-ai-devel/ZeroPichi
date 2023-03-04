@@ -7,10 +7,10 @@ RUN apk add --no-cache curl
 #CMD zerotier-cli join "3efa5cb78a48dada"
 
 
-CMD mkdir -p /home/amir
-CMD mkdir /home/amir/WebServer 
-CMD mkdir /home/amir/WebServer/Key
-CMD mkdir /home/amir/WebServer/geo_ip
+RUN mkdir -p /home/amir
+RUN mkdir /home/amir/WebServer 
+RUN mkdir /home/amir/WebServer/Key
+RUN mkdir /home/amir/WebServer/geo_ip
 
 
 RUN curl 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz' > /home/amir/WebServer/ngrok-v3-stable-linux-amd64.tgz
