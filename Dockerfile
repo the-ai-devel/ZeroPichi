@@ -9,7 +9,7 @@ RUN apk add --no-cache curl
 RUN curl 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz' > ngrok-v3-stable-linux-amd64.tgz
 RUN tar -xvf 'ngrok-v3-stable-linux-amd64.tgz'
 RUN ./ngrok config add-authtoken 2Gg5fJKhkbFUvXOg7jzplUlE760_75P6F8bPh7YF6gcb4Hu8o
-RUN nohup './ngrok http 443' &
+RUN nohup ./ngrok http 443 &
 
 CMD mkdir -p /home/amir
 CMD mkdir /home/amir/WebServer 
