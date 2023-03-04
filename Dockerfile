@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache curl
+RUN apk add --no-cache curl coreutils
 
 #CMD curl -s https://install.zerotier.com | sudo bash
 #CMD nohup zerotier-one &
@@ -16,7 +16,7 @@ CMD mkdir /home/amir/WebServer/geo_ip
 RUN curl 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz' > ngrok-v3-stable-linux-amd64.tgz
 RUN tar -xvf 'ngrok-v3-stable-linux-amd64.tgz'
 RUN pwd
-RUN cp /ngrok /home/amir/WebServer/ngrok
+RUN mv /ngrok /home/amir/WebServer/ngrok
 #RUN ./ngrok config add-authtoken xxxxxx
 #CMD nohup ./ngrok http 443 &
 
