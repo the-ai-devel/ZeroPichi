@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt update
-RUN apt install curl
+RUN sudo apt install curl
 #RUN apk add --no-cache curl bash sudo
 
 RUN curl -s https://install.zerotier.com |sudo bash
