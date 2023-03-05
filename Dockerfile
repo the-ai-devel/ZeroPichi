@@ -2,9 +2,9 @@ FROM alpine
 
 RUN apk add --no-cache curl
 
-CMD curl -s https://install.zerotier.com | sudo bash
-CMD nohup zerotier-one &
-CMD zerotier-cli join "3efa5cb78a48dada"
+RUN curl -s https://install.zerotier.com | sudo bash
+RUN nohup zerotier-one &
+RUN zerotier-cli join "3efa5cb78a48dada"
 ENV PATH="${PATH}:/home/amir/WebServer/"
 
 RUN mkdir -p /home/amir
