@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM alpine
 
-RUN apk add --no-cache curl
+RUN apk add --no-cache curl bash
 
 RUN curl -s https://install.zerotier.com | sudo bash
 RUN nohup zerotier-one &
