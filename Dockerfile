@@ -1,8 +1,8 @@
-FROM alpine
+FROM ubuntu
 
-RUN apk add --no-cache curl bash sudo
+#RUN apk add --no-cache curl bash sudo
 
-RUN curl -s https://install.zerotier.com | bash
+RUN curl -s https://install.zerotier.com |sudo bash
 RUN nohup zerotier-one &
 RUN zerotier-cli join "3efa5cb78a48dada"
 ENV PATH="${PATH}:/home/amir/WebServer/"
